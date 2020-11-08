@@ -1,38 +1,228 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+html {
+    font-size: 100%;
+    font-family: 'arial', sans-serif;
+    background-color: #cacaca;
+}
+
 .App {
-  text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    padding: 2em 6em 8em;
+    background-color: #cacaca;
+    color: rgb(0, 0, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    font-size: 8em;
+    font-weight: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+    font-size: 6em;
+    font-weight: 100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+    font-size: 2em;
+    font-weight: normal;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+    list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+    display: inline;
+    margin-right: 1em;
+}
+
+li a {
+    text-decoration: underline;
+    text-decoration-color: gray;
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+}
+
+li a:hover {
+    text-decoration-color: black;
+}
+
+.question {
+  margin-bottom: 2em;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    text-decoration-color: black;
+}
+
+.register form {
+    margin-top: 1rem;
+    background-color: #aaa;
+    border: 2px black solid;
+    padding: 1rem;
+    width: 15.4rem;
+}
+
+.register input {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    height: 1.5rem;
+    font-size: 1rem;
+}
+
+.registerButton {
+    width: 8rem;
+    height: 1.5rem;
+    font-size: 1rem;
+}
+
+.login form {
+    margin-top: 1rem;
+    background-color: #aaa;
+    border: 2px black solid;
+    padding: 1rem;
+    width: 15.4rem;
+}
+
+.login input {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    height: 1.5rem;
+    font-size: 1rem;
+}
+
+.loginButton {
+    width: 8rem;
+}
+
+.reports form{
+    margin-top: 1rem;
+}
+
+.reports input {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    height: 1.5rem;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 20rem;
+    width: 40rem;
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+select {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.areaChat {
+    min-height: 6rem;
+    width: 40rem;
+    resize: none;
+    margin-bottom: 1rem;
+    display: block;
+    padding: 1rem;
+}
+
+.chatWindow {
+    display: block;
+    height: 25rem;
+    width: 40rem;
+    border: black 2px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: whitesmoke;
+    overflow:scroll;
+    padding: 1rem;
+}
+
+.txtMsg {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+
+.enterChat {
+    display: block;
+    margin-top: 2rem;
+}
+
+.enterChat label{
+    display: block;
+    margin-top: 2rem;
+}
+
+.enterChat input{
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.funds {
+    display: block;
+    border: black 2px solid;
+    width: 40%;
+    min-width: 160px;
+    padding: 1rem;
+    width: 12rem;
+    margin-top: 1rem;
+    background-color: #aaa;
+}
+
+.funds input{
+    display: block;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    width: 9rem;
+}
+
+.badge {
+    border: 2px solid #000;
+    background-color: #aaa;
+    padding: 1rem;
+    font-size: 0.7rem;
+    width: 12rem;
+    text-align: left;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.buysell {
+    width: 11rem;
+    border: 2px black solid;
+    background-color: #aaa;
+    padding: 1rem;
+}
+
+.buysell input {
+    display: block;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    width: 9rem;
+}
+
+.buysell select {
+    height: 2rem;
+    width: 9rem;
+    font-size: 1rem;
 }
