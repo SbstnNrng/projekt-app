@@ -26,7 +26,7 @@ class Sell extends React.Component {
     };
 
     async componentDidMount() {
-        var url = "http://localhost:8333/accounts";
+        var url = "https://papi.jsram.me/accounts";
         const response = await fetch(url, { 
                                             method: "GET", 
                                             headers: {
@@ -45,7 +45,7 @@ class Sell extends React.Component {
                         email: result.data[0].email
                     });
     
-        url = "http://localhost:8333/objects";
+        url = "https://papi.jsram.me/objects";
         const response2 = await fetch(url, { 
                                             method: "GET", 
                                             headers: {
@@ -81,7 +81,7 @@ class Sell extends React.Component {
 
     handleSubmit = async(event) => {
         event.preventDefault();
-        await fetch('http://localhost:8333/objects/sell', {
+        await fetch('https://papi.jsram.me/objects/sell', {
             method: 'PUT',
             headers: {
                 "Content-Type": "application/json; charset=utf-8",
@@ -93,7 +93,7 @@ class Sell extends React.Component {
                 console.log(result3)
             });
 
-        await fetch('http://localhost:8333/accounts/sell', {
+        await fetch('https://papi.jsram.me/accounts/sell', {
             method: 'PUT',
             headers: {
                 "Content-Type": "application/json; charset=utf-8",

@@ -12,7 +12,7 @@ class Register extends React.Component {
     }
 
     req1 = (data) => {
-        fetch('http://localhost:8333/register', {
+        fetch('https://papi.jsram.me/register', {
             method: 'POST',
             headers: {"Content-Type": "application/json; charset=utf-8"},
             // We convert the React state to JSON and send it as the POST body
@@ -24,7 +24,7 @@ class Register extends React.Component {
     }
 
     req2 = (data) => {
-        fetch('http://localhost:8333/accounts', {
+        fetch('https://papi.jsram.me/accounts', {
             method: 'POST',
             headers: {"Content-Type": "application/json; charset=utf-8"},
             // We convert the React state to JSON and send it as the POST body

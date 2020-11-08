@@ -14,7 +14,7 @@ class Account extends React.Component {
     };
 
     async componentDidMount() {
-        const url = "http://localhost:8333/accounts";
+        const url = "https://papi.jsram.me/accounts";
         const response = await fetch(url, { 
                                             method: "GET", 
                                             headers: {
@@ -40,7 +40,7 @@ class Account extends React.Component {
     }
 
     handleSubmit = (event) => {
-        fetch('http://localhost:8333/accounts', {
+        fetch('https://papi.jsram.me/accounts', {
             method: 'PUT',
             headers: {
                 "Content-Type": "application/json; charset=utf-8",

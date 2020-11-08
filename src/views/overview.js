@@ -17,7 +17,7 @@ class Overview extends React.Component {
     };
 
     async componentDidMount() {
-        const url = "http://localhost:8333/objects";
+        const url = "https://papi.jsram.me/objects";
 
         let exist = socket.hasListeners('change');
         if (exist) {
